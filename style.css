@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  color: #1c1e21;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+/* Left */
+.left-section {
+  flex: 1;
+  padding-right: 60px;
+}
+.left-section h1 {
+  font-size: 60px;
+  color: #0866ff;
+  font-weight: bold;
+}
+.left-section p {
+  font-size: 28px;
+  margin-top: 10px;
+  line-height: 32px;
+  width: 500px
+}
+
+/* Right */
+.right-section {
+  width: 396px;
+}
+.login-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-top: 91px;
+}
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 17px;
+}
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-btn {
+  background: #1877f2;
+  color: #fff;
+}
+.login-btn:hover {
+  background: #166fe5;
+}
+.forgot-link {
+  display: block;
+  text-align: center;
+  margin: 15px 0;
+  color: #1877f2;
+  font-size: 14px;
+  text-decoration: none;
+}
+.divider {
+  border-bottom: 1px solid #dadde1;
+  margin: 20px 0;
+}
+.create-btn {
+  background: #42b72a;
+  color: #fff;
+  width: auto;
+  padding: 14px 20px;
+  display: block;
+  margin: auto;
+  font-size: 17px;
+}
+
+.create-btn{
+  width: 57%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background: #36a420;
+}
+.page-text {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+.page-text a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #1c1e21;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #737373;
+}
+.languages {
+  margin-bottom: 10px;
+}
+.languages a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #737373;
+}
+.languages .add-lang {
+  border: 1px solid #ccd0d5;
+  padding: 2px 6px;
+  border-radius: 2px;
+  background: #f5f6f7;
+  cursor: pointer;
+}
+.links {
+  margin: 10px 0;
+}
+.links a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #737373;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+.copy {
+  margin-top: 10px;
+  color: #737373;
+}
+hr {
+  border: none;
+  border-top: 1px solid #dadde1;
+  margin: 10px 0;
+}
+
+/* ==============================
+   Keep your original CSS above
+   ============================== */
+
+/* Responsive tweaks */
+@media (max-width: 1100px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .left-section {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .left-section p {
+    width: 90%;
+    margin: 10px auto 0 auto;
+  }
+
+  .right-section {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .login-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .create-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-section h1 {
+    font-size: 48px;
+  }
+
+  .left-section p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .login-btn {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .create-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-section h1 {
+    font-size: 40px;
+  }
+
+  .left-section p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .login-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .create-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .login-box input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  footer .languages,
+  footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer .languages a,
+  footer .links a {
+    margin: 3px 5px;
+  }
+}
